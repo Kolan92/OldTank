@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldTank.CSharp.Plugins", "OldTank.CSharp.Plugins.csproj", "{EA1C15A5-C3E1-4215-0931-6143826CCF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldTank.CSharp", "OldTank.CSharp.csproj", "{D2135E61-E411-2068-B341-02136E6EFCBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldTank.CSharp.Editor", "OldTank.CSharp.Editor.csproj", "{0D10FF03-9DEB-4250-ADD9-DF0BBED7027A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1C15A5-C3E1-4215-0931-6143826CCF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1C15A5-C3E1-4215-0931-6143826CCF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1C15A5-C3E1-4215-0931-6143826CCF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1C15A5-C3E1-4215-0931-6143826CCF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2135E61-E411-2068-B341-02136E6EFCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2135E61-E411-2068-B341-02136E6EFCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2135E61-E411-2068-B341-02136E6EFCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2135E61-E411-2068-B341-02136E6EFCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D10FF03-9DEB-4250-ADD9-DF0BBED7027A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D10FF03-9DEB-4250-ADD9-DF0BBED7027A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D10FF03-9DEB-4250-ADD9-DF0BBED7027A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D10FF03-9DEB-4250-ADD9-DF0BBED7027A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

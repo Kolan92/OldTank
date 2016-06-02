@@ -243,3 +243,19 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Temp
+/ProjectSettings
+/Library
+/Assets/Standard Assets/Effects/ImageEffects/Textures
+/Assets/Standard Assets/Effects/ImageEffects/Shaders
+/Assets/Sprites
+/Assets/Prefabs
+/Assets/Models
+/Assets/Materials
+/Assets/Fonts/Bowlby_One
+/Assets/Complete/Scenes
+/Assets/Complete/Prefabs
+/Assets/Complete/AudioMixers
+/Assets/Complete/Animators
+/Assets/AudioClips
+/Assets/Animators
