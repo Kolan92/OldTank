@@ -7,7 +7,7 @@ namespace Complete
 {
     public class GameManager : MonoBehaviour
     {
-        public int m_NumRoundsToWin = 5;            // The number of rounds a single player has to win to win the game.
+        public int m_NumRoundsToWin = 1;            // The number of rounds a single player has to win to win the game.
         public float m_StartDelay = 3f;             // The delay between the start of RoundStarting and RoundPlaying phases.
         public float m_EndDelay = 3f;               // The delay between the end of RoundPlaying and RoundEnding phases.
         public CameraControl m_CameraControl;       // Reference to the CameraControl script for control during different phases.
@@ -36,6 +36,13 @@ namespace Complete
             StartCoroutine (GameLoop ());
         }
 
+        private void Update() {
+            if(Input.GetKeyDown(KeyCode.Escape))
+                GameController.BackToMenu();
+            if (Input.GetKeyDown(KeyCode.P)) 
+                Dispatcher.Dispatch("Pause");
+
+        }
 
         private void SpawnAllTanks()
         {
@@ -81,10 +88,8 @@ namespace Complete
             yield return StartCoroutine (RoundEnding());
 
             // This code is not run until 'RoundEnding' has finished.  At which point, check if a game winner has been found.
-            if (m_GameWinner != null)
-            {
-                // If there is a game winner, restart the level.
-                SceneManager.LoadScene (0);
+            if (m_GameWinner != null) {
+                EndGame();
             }
             else
             {
@@ -92,6 +97,12 @@ namespace Complete
                 // Note that this coroutine doesn't yield.  This means that the current version of the GameLoop will end.
                 StartCoroutine (GameLoop ());
             }
+        }
+
+        private void EndGame() {
+            GameController.InstanceGameController.GameData.LastScore[0] = m_Tanks[0].m_Wins;
+            GameController.InstanceGameController.GameData.LastScore[1] = m_Tanks[1].m_Wins;
+            GameController.BackToMenu();
         }
 
 
